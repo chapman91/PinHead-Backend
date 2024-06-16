@@ -32,7 +32,7 @@ contract ERC404ExampleU16 is Ownable, ERC404U16 {
   // Function to get the URI for a given token ID
   function tokenURI(uint256 id_) public pure override returns (string memory) {
   // Concatenate a base URI with the token ID to form the full token URI 
-    return string.concat("ipfs://QmNNWwv7pcmsVuDUYRPJ7T9zLABM46KM9VR1rNNAqFKSQx/", Strings.toString(id_));
+    return string.concat("https://copper-important-coyote-286.mypinata.cloud/ipfs/QmQ7jWzYbqVDf8eHHZuEddsFQtMs4bV4PD5YeWWZX8mg2r/", Strings.toString(id_));
   }
 
   // Function to set whether an account is exempt from ERC721 transfer restrictions

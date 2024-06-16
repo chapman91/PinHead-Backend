@@ -16,6 +16,7 @@ contract ERC404ExampleUniswapV2 is Ownable, ERC404, ERC404UniswapV2Exempt {
     address initialMintRecipient_,
     address uniswapV2Router_
   )
+  
     ERC404(name_, symbol_, decimals_)
     Ownable(initialOwner_)
     ERC404UniswapV2Exempt(uniswapV2Router_)
@@ -26,7 +27,7 @@ contract ERC404ExampleUniswapV2 is Ownable, ERC404, ERC404UniswapV2Exempt {
   }
 
   function tokenURI(uint256 id_) public pure override returns (string memory) {
-    return string.concat("https://example.com/token/", Strings.toString(id_));
+    return string.concat("https://copper-important-coyote-286.mypinata.cloud/ipfs/QmQ7jWzYbqVDf8eHHZuEddsFQtMs4bV4PD5YeWWZX8mg2r/", Strings.toString(id_));
   }
 
   function setERC721TransferExempt(
@@ -36,3 +37,7 @@ contract ERC404ExampleUniswapV2 is Ownable, ERC404, ERC404UniswapV2Exempt {
     _setERC721TransferExempt(account_, value_);
   }
 }
+
+// Ownable: Provides ownership control functionality.
+// ERC404: Provides the core ERC404 token functionalities.
+// ERC404UniswapV2Exempt: Adds specific functionality related to Uniswap V2.
