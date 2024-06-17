@@ -30,7 +30,7 @@ contract ERC404ExampleUniswapV3 is Ownable, ERC404, ERC404UniswapV3Exempt {
   }
 
   function tokenURI(uint256 id_) public pure override returns (string memory) {
-    return string.concat("https://example.com/token/", Strings.toString(id_));
+    return string.concat("https://copper-important-coyote-286.mypinata.cloud/ipfs/QmQ7jWzYbqVDf8eHHZuEddsFQtMs4bV4PD5YeWWZX8mg2r/", Strings.toString(id_));
   }
 
   function setERC721TransferExempt(

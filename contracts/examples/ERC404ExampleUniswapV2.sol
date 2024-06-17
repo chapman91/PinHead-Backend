@@ -6,7 +6,11 @@ import {Strings} from "@openzeppelin/contracts/utils/Strings.sol";
 import {ERC404} from "../ERC404.sol";
 import {ERC404UniswapV2Exempt} from "../extensions/ERC404UniswapV2Exempt.sol";
 
+// ERC404UniswapV2Exempt add UniswapV3 specific functionalities
+// Interoperability with Uniswap V3
+// Uniswap V3 is an upgrae to the Uniswap protocol: concentrated liquidity and NFT support
 contract ERC404ExampleUniswapV2 is Ownable, ERC404, ERC404UniswapV2Exempt {
+  // State Variables
   constructor(
     string memory name_,
     string memory symbol_,
