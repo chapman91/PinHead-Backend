@@ -53,7 +53,7 @@ contract ERC404Example is Ownable, ERC404 {
     // multiple strings are concatenated to generate URI
     // "https://example.com/token/": base URL pointing to the location the token metadata stored
     //  Strings.toString(id_): converts the token ID from a number to a string using the `toString` function from `Strings.sol`
-    return string.concat("ipfs://QmNNWwv7pcmsVuDUYRPJ7T9zLABM46KM9VR1rNNAqFKSQx/", Strings.toString(id_));
+    return string.concat("https://copper-important-coyote-286.mypinata.cloud/ipfs/QmQ7jWzYbqVDf8eHHZuEddsFQtMs4bV4PD5YeWWZX8mg2r/", Strings.toString(id_));
   }
 
   // `setERC721TransferExempt` sets an exemption on transfer fees for ERC-721 tokens for a specific account
